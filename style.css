@@ -1,0 +1,143 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f8f5ef;
+    font-family: Georgia, serif;
+    color: #65564f;
+    padding: 25px;
+}
+
+.container {
+    width: 100%;
+    max-width: 650px;
+    min-height: 600px;
+    background: #fffdf9;
+    border: 1px solid #eee5dc;
+    border-radius: 8px;
+    text-align: center;
+    padding: 65px 30px;
+    box-shadow: 0 15px 50px #b9a99b20;
+}
+
+.flower {
+    font-size: 35px;
+    color: #d9a6a6;
+    margin-bottom: 25px;
+}
+
+.small-title {
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    letter-spacing: 5px;
+    color: #b89c91;
+}
+
+h1 {
+    font-size: clamp(38px, 8vw, 58px);
+    font-weight: normal;
+    margin: 25px 0;
+    color: #76615a;
+}
+
+.line {
+    width: 55px;
+    height: 1px;
+    background: #d8b7a9;
+    margin: 25px auto;
+}
+
+.intro {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.chinese {
+    font-size: 19px;
+    color: #bd918d;
+    margin: 18px 0;
+}
+
+.translation {
+    font-size: 13px;
+    color: #a99a91;
+    font-style: italic;
+}
+
+button {
+    margin-top: 40px;
+    padding: 16px 30px;
+    border: 1px solid #d8b7a9;
+    border-radius: 40px;
+    background: transparent;
+    color: #826b63;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #e9d8d1;
+    transform: translateY(-3px);
+}
+
+button span {
+    margin-left: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+#surprise {
+    margin-top: 45px;
+    padding-top: 30px;
+    border-top: 1px solid #eee5dc;
+    animation: appear 1.5s ease;
+}
+
+.heart {
+    font-size: 38px;
+    color: #d9a6a6;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+#surprise > p:not(.chinese):not(.translation) {
+    line-height: 1.9;
+    font-size: 15px;
+}
+
+.signature {
+    margin-top: 25px;
+    color: #bd918d;
+}
+
+footer {
+    margin-top: 60px;
+    font-size: 11px;
+    color: #c0aaa0;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
